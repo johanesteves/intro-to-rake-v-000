@@ -26,3 +26,8 @@ desc "pulls env"
 task :environment do
   require_relative './config/environment'
 end
+
+desc "drop into Pry"
+task :console do
+  Pry.start
+end
