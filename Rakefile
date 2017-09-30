@@ -28,6 +28,6 @@ task :environment do
 end
 
 desc "drop into Pry"
-task :console do
+task :console => :environmentdo
   Pry.start
 end
