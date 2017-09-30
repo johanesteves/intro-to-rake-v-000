@@ -17,3 +17,7 @@ namespace :db do
   end
 
 end
+desc "pulls env"
+task :environment do
+  require_relative './config/environment'
+end
